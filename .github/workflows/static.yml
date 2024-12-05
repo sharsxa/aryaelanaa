@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Reveal Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 100px;
+            margin: 0;
+        }
+
+        #coolText {
+            display: none;
+            font-size: 40px;
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 2px;
+            color: #ff00ff;
+            text-shadow: 0 0 10px rgba(255, 0, 255, 0.7), 0 0 20px rgba(255, 0, 255, 0.5);
+        }
+
+        #revealButton {
+            padding: 10px 20px;
+            background-color: #ff00ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        #revealButton:hover {
+            background-color: #ff66ff;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="revealButton">Click to Reveal Text</button>
+    <div id="coolText">ᴅʀᴇᴀᴍɪɴɢ ɪɴ ɢʟɪᴛᴄʜᴇs ✦ ғʟᴏᴀᴛɪɴɢ ɪɴ ᴛʜᴇ ғᴜᴛᴜʀᴇ ✧</div>
+
+    <script>
+        document.getElementById('revealButton').onclick = function() {
+            document.getElementById('coolText').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
